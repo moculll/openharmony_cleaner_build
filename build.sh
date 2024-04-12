@@ -1,0 +1,2 @@
+#!/bin/env bash
+docker run --rm -v ./out:/opt/out oh_cleaner:latest bash -c "hb set --root_path /opt/openharmony/release101 && hb build -p smart_cleaner@team_x && cp -r /opt/openharmony/release101/out/hispark_pegasus/smart_cleaner/* /opt/out/"
